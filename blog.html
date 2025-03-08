@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="font-display">
+    <!-- #region Mobile-header -->
+
+    <div
+      class="w-full h-[55px] bg-gray-200 flex justify-between items-center px-4 shadow-md sticky top-0 z-50 lg:hidden md:h-[40px]"
+    >
+      <div class="flex gap-4 mt-2">
+        <!-- <img
+      class="w-[60px] h-6"
+      src="./public/image/header/image-logo.png"
+      alt=""
+    /> -->
+        <img
+          class="w-5 h-5"
+          src="./public/image/header/burger-bar.png"
+          alt=""
+        />
+        <img
+          class="w-[60px] h-6"
+          src="./public/image/header/image-logo.png"
+          alt=""
+        />
+      </div>
+      <div class="flex gap-4">
+        <a href="#">
+          <img class="w-5 h-5" src="./public/image/header/search.png" alt=""
+        /></a>
+        <a href="#"
+          ><img class="w-5 h-5" src="./public/image/header/user.png" alt=""
+        /></a>
+        <a href="./login.htmlm "
+          ><img
+            class="w-5 h-5"
+            src="./public/image/header/shopping_14859558.png"
+            alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region header desktop -->
+    <header
+      class="bg-[#FFFFFF] top-0 w-full lg:h-35 shadow-sm sticky z-50"
+      id="#scroll"
+    >
+      <div class="z-50 hidden lg:flex lg:w-full md:w-full lg:h-24">
+        <div class="flex items-center justify-center gap-10 w-[90%]">
+          <div>
+            <a href="#"
+              ><img
+                class="w-10 md:w-24"
+                src="./public/image/header/image-logo.png"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <input
+              class="md:flex hidden rounded-2xl xl:w-[386px] lg:w-[200px] h-[40px] bg-[#F7F8FA] px-2 shadow-lg outline-none"
+              type="text"
+              placeholder="جست و جوی محصولات"
+            />
+          </div>
+          <div class="hidden lg:flex">
+            <ul
+              class="gap-5 text-[#A9A9A9] lg:text-sm text-[9px] md:w-full lg:flex hidden"
+            >
+              <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
+                باشگاه مشتریان
+              </li>
+              <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
+                <a href="./blog.html"> بلاگ</a>
+              </li>
+              <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
+                ارتباط ما
+              </li>
+              <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
+                درباره ما
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-center w-1/3">
+          <div class="flex items-center justify-center h-16 gap-5">
+            <a href="#"
+              ><img
+                class="w-[26px] h-[26px]"
+                src="./public/image/header/shopping_14859558.png"
+                alt=""
+            /></a>
+
+            <a
+              href="login.html"
+              class="md:flex hidden p-3 m-auto text-sm text-white bg-blue-600 rounded-xl hover:bg-[#0A295A] transition-[300ms]"
+              >ورود و ثبت نام</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inline-block w-full pt-1">
+        <div class="items-center justify-center hidden w-full h-2 lg:flex">
+          <ul
+            class="flex text-sm xl:gap-11 lg:gap-10 lg:text-[10px] xl:text-[15px] text-center items-center justify-center mt-4 text-[#6B6B6B] z-[9999]"
+          >
+            <li>
+              <a class="hover:text-[hover:text-[#fe5f55]" href="#">خانه</a>
+            </li>
+            <li
+              class="group relative w-fit h-[50px] flex items-center justify-center"
+            >
+              <a class="relative flex gap-2" href="#"
+                >لوازم جانبی موبایل و کامپیوتر
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div
+                  class="absolute top-10 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"
+                ></div>
+                <ul
+                  class="w-[330px] h-auto top-10 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">هولدر و نگه دارنده</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    <span class="flex justify-between w-full"
+                      >تجهیزات ذخیره سازی
+
+                      <img
+                        class="w-3"
+                        src="../public/svg/arrow-left.svg"
+                        alt=""
+                      />
+                    </span>
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">اسپیکر</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    ماس و کیبورد و پدموس
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    <span class="flex justify-between w-full">
+                      هنزفری و هدست , میکروفون
+                      <img
+                        class="w-3"
+                        src="../public/svg/arrow-left.svg"
+                        alt=""
+                      />
+                    </span>
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    پاوربانک و جامپ استارتر
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    <span class="flex justify-between w-full">
+                      کابل شارژ
+                      <img
+                        class="w-3"
+                        src="../public/svg/arrow-left.svg"
+                        alt=""
+                      />
+                    </span>
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    <span class="flex justify-between w-full">
+                      آداپتور و شارژر
+                      <img
+                        class="w-3"
+                        src="../public/svg/arrow-left.svg"
+                        alt=""
+                      />
+                    </span>
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    دسته بازی و خنک کننده موبایل
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">انواع تبدیل برق</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    کابل و دانگل انتقال تصویر
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">انواع هاب</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    فن خنک کننده کامپیوتر
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">قاب و گلس</li>
+                </ul>
+              </a>
+            </li>
+            <li class="">
+              <a class="relative flex gap-2 group" href="#"
+                >کابل- مبدل- رابط
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div
+                  class="absolute top-10 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"
+                ></div>
+                <ul
+                  class="w-[330px] h-auto top-7 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">کابل HDMI</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل پرینتر</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل هارد اکسترنال</li>
+                  <li class="flex mx-4 my-6 text-[12px]">انواع رابط وتبدیل</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل AUX</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل 2 به 1 صدا</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل اپتیکال</li>
+                  <li class="flex mx-4 my-6 text-[12px]">کابل و فلش OTG</li>
+                </ul>
+              </a>
+            </li>
+            <li class="">
+              <a class="relative flex gap-2 group" href="#"
+                >لوازم تولید محتوا
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <ul
+                  class="w-[250px] h-[100px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">میکروفون</li>
+                  <li class="flex mx-4 my-6 text-[12px]">رینگ لایت و پایه</li>
+                </ul>
+              </a>
+            </li>
+            <li class="">
+              <a class="relative flex gap-2 group" href="#"
+                >لوازم شبکه
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <ul
+                  class="w-[250px] h-[180px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">مودم - روتر</li>
+                  <li class="flex mx-4 my-6 text-[12px]">هاب-شبکه</li>
+                  <li class="flex mx-4 my-6 text-[12px]">مودم همراه</li>
+                  <li class="flex mx-4 my-6 text-[12px]">لوازم جانبی</li>
+                </ul>
+              </a>
+            </li>
+            <li class="">
+              <a class="relative flex gap-2 group" href="#"
+                >کنسول بازی و لوازم جانبی
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <ul
+                  class="w-[330px] h-[200px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">هنزفری و هدست</li>
+                  <li class="flex mx-4 my-6 text-[12px]">دسته بازی</li>
+                  <li class="flex mx-4 my-6 text-[12px]">موس و کیبورد</li>
+                  <li class="flex mx-4 my-6 text-[12px]">لوازم جانبی</li>
+                </ul>
+              </a>
+            </li>
+            <li class="">
+              <a class="relative flex gap-2 group" href="#"
+                >لوازم خانگی و شخصی
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <ul
+                  class="w-[330px] h-[350px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                >
+                  <li class="flex mx-4 my-6 text-[12px]">انواع گجت های جذاب</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    <span class="flex justify-between w-full">
+                      باتری و شارژر
+                      <img
+                        class="w-3"
+                        src="../public/svg/arrow-left.svg"
+                        alt=""
+                      />
+                    </span>
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    اندروید باکس و گیرنده دجیتال
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">آنتن رومیزی</li>
+                  <li class="flex mx-4 my-6 text-[12px]">
+                    مچ بند و ساعت هوشمند
+                  </li>
+                  <li class="flex mx-4 my-6 text-[12px]">محصولات کمبو</li>
+                  <li class="flex mx-4 my-6 text-[12px]">رابط برق و USB</li>
+                  <li class="flex mx-4 my-6 text-[12px]">اف ام پلیر</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a class="flex gap-2 hover:text-[#fe5f55]" href="#"
+                >برند ها
+                <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- #region blog -->
+
+    <div
+      class="w-[72%] h-auto mt-12 mr-12 leading-7 text-base/loose text-gray-500 lg:w-full lg:mr-0"
+    >
+      <div
+        class="hidden md:w-full md:flex md:items-center md:justify-around md:mb-7"
+      >
+        <img
+          class="w-48 lg:flex lg:justify-center lg:items-center"
+          src="./public/image/header/image-logo.png"
+          alt=""
+        />
+      </div>
+      <p class="lg:text-center lg:w-[50%] lg:mx-auto">
+        فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در
+        حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398 از
+        طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و
+        مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از مشتریانش را
+        جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به فعالیت های خود
+        اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح شما را به
+        ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه آداپتور موبایل، کابل
+        شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست، لوازم گیمینگ، باتری و
+        شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران گجت جذاب
+        ادامه میدهد.
+      </p>
+    </div>
+
+    <!-- #endregion -->
+
+    <div class="block w-full mt-12 text-xl text-center text-blue-800">
+      نظر برخی از مشتریان
+    </div>
+    <div class="w-full">
+      <!-- Swiper -->
+      <div class="mt-10 swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="flex items-center justify-center mx-auto border-gray-800 swiper-slide"
+          >
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm hover:shadow-gray-350 cursor-pointer lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">آزاده میرزایی</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                لطفا اسپیکر بزارید تشکر!
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mx-auto swiper-slide">
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">مریم نیک روش</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                برای تولد برادرم خرید کرده بودم که سریع و به موقع بدستم رسید.
+                ممنونم
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mx-auto swiper-slide">
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">علی عزیزی</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                ممنون از پشتیبانی خوبتون ...
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mx-auto swiper-slide">
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">محمد حسینی</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                هندزفری لیبرتی ایر 2 انکر رو به همه پیشنهاد میکنم
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mx-auto swiper-slide">
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">محمد نجفی</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                لطفا دسته بازی با کیفیت هم به فروشگاه اضافه کنید
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center mx-auto swiper-slide">
+            <div
+              class="w-[90%] h-[70px] bg-gray-100 rounded-xl mx-auto shadow-sm lg:h-[100px]"
+            >
+              <div class="flex h-auto gap-1 pt-3 mr-5">
+                <img
+                  class="w-5"
+                  src="./public/image/blog/icons8-quote-100.png"
+                  alt=""
+                />
+
+                <p class="text-[14px]">آزاده میرزایی</p>
+              </div>
+
+              <div class="mt-3 mr-10 text-[15px] text-gray-500">
+                لطفا اسپیکر بزارید تشکر!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-red-700 swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- #region -->
+
+    <!-- #region address -->
+    <div
+      class="w-full md:h-[100px] mt-10 text-sm bg-gray-200 cursor-context-menu h-[270px] tracking-wide leading-7"
+    >
+      <div
+        class="w-[80%] h-full mx-auto md:flex md:flex-row md:items-center gap-5 flex flex-col justify-start mt-2"
+      >
+        <div class="flex items-center gap-2 my-3 md:my-0">
+          <img
+            class="w-4 h-4"
+            src="./public/image/address/phone-call.png"
+            alt=""
+          />
+          <span class="text-gray-600">021-33902646</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-4 h-4" src="./public/image/address/clock.png" alt="" />
+          <span class="text-gray-600"
+            >شنبه تا چهارشنبه از ساعت 10 صبح الی ساعت 18 پنجشنبه ها از 10 صبح
+            الی ساعت 16</span
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-4 h-4" src="./public/image/address/map.png" alt="" />
+          <span class="text-gray-600"
+            >تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک 3 - فروشگاه
+            بدیع</span
+          >
+        </div>
+        <a class="hidden" href="#top"
+          ><div
+            class="items-center justify-between w-24 h-12 mr-10 text-xs text-gray-400 bg-white shadow-2xl cursor-pointer lg:flex rounded-xl hover:text-gray-800"
+          >
+            <span class="mx-2"> برو بالا</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mx-2 text-gray-800 size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+              />
+            </svg></div
+        ></a>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region more -->
+
+    <div class="w-full">
+      <div class="md:w-[80%] h-full mx-auto md:flex block w-full">
+        <div
+          class="flex flex-col items-center justify-center w-full pt-10 mx-auto md:w-1/5 md:my-auto"
+        >
+          <img
+            class="w-[198px] h-[80px]"
+            src="./public/image/footer/image-1.png"
+            alt=""
+          />
+          <div class="flex gap-5 mt-10">
+            <p>با ما در ارتباط باشید :</p>
+            <img src="./public/image/footer/image-2.png" alt="" />
+          </div>
+        </div>
+        <div class="w-full mt-5 md:w-3/5">
+          <p
+            class="flex justify-start mx-3 mt-16 text-xl text-black md:mt-2 md:mx-0 md:block"
+          >
+            فروشگاه اینترنتی دسترسی
+          </p>
+          <div class="mx-4 mt-5 leading-8 text-gray-500 md:mx-0">
+            <span>
+              فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا
+              در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال
+              1398 از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه
+              کالای اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد
+              بسیاری از مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق
+              سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی
+              دقیق کالاها انتخاب صحیح شما را به ارمغان آورد. و امروز دسترسی
+              فعالیت خود را در زمینه آداپتور موبایل، کابل شارژ، پاوربانک، ساعت
+              هوشمند، هندزفری و هدست، لوازم گیمینگ، باتری و شارژر، لوازم شبکه،
+              تجهیزات ذخیره سازی، گیرنده دیجیتال و هزاران گجت جذاب ادامه میدهد.
+            </span>
+          </div>
+        </div>
+        <div class="w-full md:w-1/5 md:block mt-7 md:mr-7">
+          <p class="text-xl text-center md:text-start">دسترسی سریع</p>
+          <div
+            class="flex flex-col mx-5 mt-5 text-sm leading-8 text-gray-400 text-start md:mx-0"
+          >
+            <span class="cursor-pointer hover:text-gray-600"
+              >باشگاه مشتریان</span
+            >
+            <span class="cursor-pointer hover:text-gray-600"
+              >سوالات متداول</span
+            >
+            <span class="cursor-pointer hover:text-gray-600">بلاگ</span>
+            <span class="cursor-pointer hover:text-gray-600"
+              >شرایط و قوانین</span
+            >
+            <span class="cursor-pointer hover:text-gray-600"
+              >ارتباط با ما
+            </span>
+            <span class="cursor-pointer hover:text-gray-600">درباره ما </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region banner finish -->
+    <div class="w-full bg-blue-700 h-[60px] mt-10">
+      <p
+        class="text-center text-white pt-3 md:text-sm text-[14px] tracking-wider"
+      >
+        تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی میابشد.
+      </p>
+    </div>
+
+    <!-- #endregion -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
