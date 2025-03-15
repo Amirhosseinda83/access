@@ -1,9 +1,9 @@
-<!doctype html>
-<html lang="en" dir="rtl" style="scroll-behavior: smooth;">
+<!DOCTYPE html>
+<html lang="en" dir="rtl" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>فروشگاه  اینترنتی دسترسی</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/category.css">
     <link rel="stylesheet" href="./src/css/slider.css">
@@ -13,9 +13,9 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./Now.css">  
-
-  </head>
-  <body class="font-display"">
+    <link rel="shortcut icon" href="./public/image/logo.png" type="image/x-icon">
+  </head> 
+  <body class="font-display">
     <!-- #region Mobile-header -->
     <div
       class="w-full h-[55px] bg-gray-200 flex justify-between items-center px-4 shadow-md sticky top-0 z-50 lg:hidden md:h-[40px]  "
@@ -55,7 +55,7 @@
       <div class="z-50 hidden lg:flex lg:w-full md:w-full lg:h-24">
         <div class="flex items-center justify-center gap-10 w-[90%]">
           <div>
-            <a href="#"
+            <a href="./index.html"
               ><img class="w-10 md:w-24" src="./public/image/header/image-logo.png" alt=""
             /></a>
           </div>
@@ -69,23 +69,23 @@
           <div class="hidden lg:flex">
             <ul class="gap-5 text-[#A9A9A9] lg:text-sm text-[9px] md:w-full     lg:flex hidden">
               <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
-                باشگاه مشتریان
+                <a href="./club.html">باشگاه مشتریان</a>
               </li>
               <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
-               <a href="./blog.html"> بلاگ</a>
+               <a href=""> بلاگ</a>
               </li>
               <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
-                ارتباط ما
+<a href="./call.html">                ارتباط ما</a>
               </li>
               <li class="transition-[300ms] cursor-pointer hover:text-blue-900">
-                درباره ما
-              </li>
+               <a href="./about.html"> درباره ما
+              </a>              </li>
             </ul>
           </div>
         </div>
         <div class="flex items-center justify-center w-1/3">
           <div class="flex items-center justify-center h-16 gap-5">
-            <a href="#"
+            <a href="./buy.html"
               ><img
                 class="w-[26px] h-[26px]"
                 src="./public/image/header/shopping_14859558.png"
@@ -108,13 +108,13 @@
             <li>
               <a class="hover:text-[hover:text-[#fe5f55]" href="#">خانه</a>
             </li>
-            <li class=" group relative w-fit  h-[50px] flex items-center justify-center">
+            <li class="relative flex items-center justify-center group w-fit">
               <a class="relative flex gap-2 " href="#"
                 >لوازم جانبی موبایل و کامپیوتر
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
                 <div class="absolute top-10 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[330px] h-auto top-10 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden "
+                  class="w-[330px] h-auto top-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden "
                 >
                   <li class="flex mx-4 my-6 text-[12px]">هولدر و نگه دارنده</li>
                   <li class="flex mx-4 my-6 text-[12px]">
@@ -187,7 +187,7 @@
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
                 <div class="absolute top-10 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[330px] h-auto top-7 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                  class="w-[330px] h-auto top-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
                 >
                   <li class="flex mx-4 my-6 text-[12px]">کابل HDMI</li>
                   <li class="flex mx-4 my-6 text-[12px]">کابل پرینتر</li>
@@ -204,8 +204,9 @@
               <a class="relative flex gap-2 group" href="#"
                 >لوازم تولید محتوا
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div class="absolute top-9 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[250px] h-[100px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                  class="w-[250px] h-[100px] mt-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
                 >
                   <li class="flex mx-4 my-6 text-[12px]">میکروفون</li>
                   <li class="flex mx-4 my-6 text-[12px]">رینگ لایت و پایه</li>
@@ -216,8 +217,9 @@
               <a class="relative flex gap-2 group" href="#"
                 >لوازم شبکه
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div class="absolute top-10 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[250px] h-[180px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                  class="w-[250px] h-[180px] mt-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
                 >
                   <li class="flex mx-4 my-6 text-[12px]">مودم - روتر</li>
                   <li class="flex mx-4 my-6 text-[12px]">هاب-شبکه</li>
@@ -230,8 +232,9 @@
               <a class="relative flex gap-2 group" href="#"
                 >کنسول بازی و لوازم جانبی
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div class="absolute top-8 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[330px] h-[200px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                  class="w-[330px] h-[200px] mt-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
                 >
                   <li class="flex mx-4 my-6 text-[12px]">هنزفری و هدست</li>
                   <li class="flex mx-4 my-6 text-[12px]">دسته بازی</li>
@@ -244,8 +247,9 @@
               <a class="relative flex gap-2 group" href="#"
                 >لوازم خانگی و شخصی
                 <img class="w-3" src="../public/svg/arrow-down.svg" alt="" />
+                <div class="absolute top-8 left-0 bottom-0 w-full h-0.5 bg-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 z-999"></div>
                 <ul
-                  class="w-[330px] h-[350px] mt-8 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
+                  class="w-[330px] h-[350px] mt-5 cursor-pointer bg-white group-hover:block flex-col !absolute text-[13px] text-[#514b4b ] hidden"
                 >
                   <li class="flex mx-4 my-6 text-[12px]">انواع گجت های جذاب</li>
                   <li class="flex mx-4 my-6 text-[12px]">
@@ -492,7 +496,7 @@
   <!-- Swiper -->
   <div class="swiper myCategory">
     <div class="swiper-wrapper">
-      <div class="swiper-slide desktop-slide-show"><img src="./public/image/category/image-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="./public/image/category/image-7.png" alt=""></div>
       <div class="swiper-slide"><img src="./public/image/category/image-2.png" alt=""></div>
       <div class="swiper-slide"><img src="./public/image/category/image-3.png" alt=""></div>
       <div class="swiper-slide"><img src="./public/image/category/image-4.png" alt=""></div>
@@ -503,7 +507,8 @@
       <div class="swiper-slide"><img src="./public/image/category/image-10.png" alt=""></div>
    
     </div>
-    <div class="swiper-pagination"></div>
+    <div class=" swiper-button-next"></div>
+    <div class=" swiper-button-prev"></div> 
   </div>
 
 
@@ -591,7 +596,7 @@
         <span class="hidden mt-2 text-xs text-gray-400 md:block"> انواع گجت های جذاب</span>
 <h3 class="text-[15px] mt-7 text-gray-500 hover:text-blue-700 cursor-pointer">
 
-  جت فن 150 واتی گرین مدل Green Lion...                                                                     </h3>
+  جت فن 150 واتی گرین مدل Green Lion...</h3>
 
 <div class="flex items-center justify-center w-full mt-7 gap-x-1"> 
   <span class="text-blue-900 text-[18px] ">ناموجود</span>
@@ -620,7 +625,7 @@
     
    
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 
 
 </div>
@@ -954,6 +959,8 @@
 
   </div>
 </div>
+
+
 <!-- #endregion -->
 
 
@@ -1017,33 +1024,42 @@
    
   </div>
 </div>
+
+
+<img class="fixed w-10 cursor-pointer right-[5%] bottom-[10%] modal " src="./public/image/modal/image-1.jpg" alt="">
+<div class="fixed hidden bg-white modal-container right-[1%]  bottom-[20%] z-50">
+  <div class="modal-content w-[200px] border-2 border-pink-700  ">
+  <div class="px-2 py-2 modal-header">
+    <img class="w-3 py-2 cursor-pointer close-btn" src="./public/image/modal/delete.png" alt="">
+<p>شما اجازه ارسال نوتیف را به ما ندادید. طبق تصویر زیر، اجازه ارسال نوتیف را صادر کنید.</p>    
+  </div>
+  <div class="modal-body">
+    <img src="./public/image/modal/image-1.png" alt="">
+  </div>
+
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <!-- #endregion -->
  <!-- #region banner finish -->
   <div class="w-full bg-blue-700 h-[60px] mt-10 ">
     <p class="text-center text-white pt-3 md:text-sm  text-[14px] tracking-wider ">تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی میابشد.</p>
   </div>
-
+  
 <!-- #endregion -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+<script src="./script.js">
+</script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -1068,6 +1084,10 @@
   var swiper = new Swiper(".myCategory", {
     slidesPerView: 6,
     spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
    
   });
 </script>
@@ -1140,7 +1160,31 @@
       
       },
   });
+</script>    
+<script>
+document.querySelector('.modal').addEventListener('click', function() {
+
+document.querySelector('.modal-container').classList.remove('hidden')
+
+
+})
+  
+  document.querySelector('.close-btn').addEventListener('click' , function() {
+
+document.querySelector('.modal-container').classList.add('hidden')
+
+}  )
+
+document.addEventListener( 'keydown', function(event) {
+  if( event.key==='Escape') {
+    if(!document.querySelector('.modal-container').classList.contains('hidden') )  {
+      document.querySelector('.modal-container').classList.add('hidden')
+      
+    }
+  }
+}    )
+
 </script>
-    
+<script src="./src/script.js"></script>
   </body>
 </html>
